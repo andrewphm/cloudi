@@ -4,6 +4,10 @@
 
 :root {
     --primary-color: #047aed;
+    --secondary-color: #1c3fa8;
+    --dark-color: #002240;
+    --light-color: #f4f4f4;
+    
 }
 
 
@@ -30,7 +34,7 @@ a {
     color: #333;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-weight: 300; /* Less bold*/
     line-height: 1.2; /* lessen the line-height */
     margin: 10px 0;
@@ -160,4 +164,64 @@ img {
 .stats .flex p {
     font-size: 20px;
     font-weight: bold;
+}
+
+
+/*      CLI     */
+
+.cli .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 0;
+}
+
+.cli img {
+    grid-area: 1 / 1 / span 2 / span 2;
+}
+
+.cli h3 {
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/*     Cloud     */
+
+.cloud .grid {
+    grid-template-columns: 4fr 3fr;
+}
+
+/*      Languages     */
+
+.languages .flex {
+    flex-wrap: wrap;
+}
+
+.languages {
+    margin-top: 30px;
+}
+
+.languages .container {
+    padding-top: 10px;
+}
+
+.languages .card img {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.languages .card h3 {
+    padding-top: 15px;
+}
+
+/* Animation effect on languages */
+
+.languages .card {
+    transition: transform 0.2s ease-in;
+}
+
+.languages .card:hover {
+    transform: translateY(-10px);
 }
