@@ -60,6 +60,10 @@
     color: #333;
 }
 
+.text-color {
+    color: var(--primary-color);
+}
+
 /* Text sizes */
 .lead {
     font-size: 20px
@@ -88,6 +92,30 @@
 .text-center {
     text-align: center;
 }
+
+/* Alert */
+
+.alert {
+    background-color: var(--light-color);
+    padding: 10px 20px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.alert i {
+    margin-right: 10px;
+}
+
+.alert-success {
+    background-color: var(--success-color);
+    color: white;
+}
+
+.alert-error {
+    background-color: var(--fail-color);
+    color: white;
+}
+
 
 .flex {     
     display:flex;
