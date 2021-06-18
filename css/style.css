@@ -194,6 +194,11 @@ img {
 
 /*      Languages     */
 
+.languages h2 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
 .languages .flex {
     flex-wrap: wrap;
 }
@@ -224,4 +229,23 @@ img {
 
 .languages .card:hover {
     transform: translateY(-10px);
+}
+
+
+/*      Footer      */
+
+footer {
+    margin-top: 50px;    
+}
+
+footer .grid {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+footer nav a {
+    color: white;
+}
+
+footer nav a i {
+    color: white;
 }
