@@ -40,7 +40,11 @@
 
             <div class="showcase-form card">
                 <h2>Request a Demo</h2>
-                <form>
+                <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact">
+                    <p class="hidden">
+                        <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+                      </p>
                     <div class="form-control">
                         <input type="text" name="name" placeholder="Name" required>
                     </div>
@@ -113,31 +117,31 @@
         <div class="container flex">
             <div class="card">
                 <h3 class="text-center">Node.js</h3>
-                <img src="/images/logo/node.png" alt="">
+                <img src="images/logo/node.png" alt="">
             </div>
             <div class="card">
                 <h3 class="text-center">Python</h3>
-                <img src="/images/logo/python.png" alt="">
+                <img src="images/logo/python.png" alt="">
             </div>
             <div class="card">
                 <h3 class="text-center">C#</h3>
-                <img src="/images/logo/csharp.png" alt="">
+                <img src="images/logo/csharp.png" alt="">
             </div>
             <div class="card">
                 <h3 class="text-center">Ruby</h3>
-                <img src="/images/logo/ruby.png" alt="">
+                <img src="images/logo/ruby.png" alt="">
             </div>
             <div class="card">
                 <h3 class="text-center">PHP</h3>
-                <img src="/images/logo/php.png" alt="">
+                <img src="images/logo/php.png" alt="">
             </div>
             <div class="card">
                 <h3 class="text-center">Scala</h3>
-                <img src="/images/logo/scala.png" alt="">
+                <img src="images/logo/scala.png" alt="">
             </div>
             <div class="card">
                 <h3 class="text-center">Clojure</h3>
-                <img alt="" src="/images/logo/clojure.png">
+                <img alt="" src="images/logo/clojure.png">
             </div>
         </div>
     </section>
